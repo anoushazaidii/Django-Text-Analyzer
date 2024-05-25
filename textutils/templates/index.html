@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        textarea {
+            width: 95%;
+            height: 150px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        button.cool-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        button.cool-button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+        
+    
+
+   
+    </style>
+</head>
+<body>
+    <h1>Welcome to my text analyzer. Enter your text below!</h1>
+    <form action="/analyze", method="post">
+        <textarea name="text" data-sider-insert-id='40c0c272-e6cb-4c23-945d-a4e6b2b296f0' data-sider-select-id='36e0ca26-c791-4555-af28-fd45c2643b11' spellcheck='false'></textarea>   
+        <input type="checkbox" name="removepunc">Remove punctuation<br>
+        <input type="checkbox" name="fullcaps">fullcaps<br>
+        <input type="checkbox" name="newlineremover"> newlineremover<br>
+        <input type="checkbox" name="extraspaceremover">extraspaceremover<br>
+        <input type="checkbox" name="charcounter">char count<br>
+
+
+        <button type="submit" class="cool-button">Analyze</button>
+    </form>
+</body>
+</html>
